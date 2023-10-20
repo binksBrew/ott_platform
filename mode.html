@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>toggle</title>
+	<meta charset="utf-8">
+</head>
+<style>
+	body{
+		padding: 25px;
+		background-color: white;
+		color: black;
+		font-size: 25px;
+	}
+	.dark-mode{
+		background-color: black;
+		color: white;
+	}
+</style>
+<body>
+	<h2>toggle</h2>
+	<button onclick="myFunction()">button</button>
+	<script>
+		function myFunction(){
+			var element = document.body;
+			element.classList.toggle("dark-mode")
+		}
+	</script>
+</body>
+</html>

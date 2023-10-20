@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>thank you</title>
+	<link rel="stylesheet" type="text/css" href="thanks.css">
+</head>
+<body>
+	<div class="container">
+		<button onclick="openPopup()" type="button" class="btn">Submit</button>
+		<div class="popup" id="popup">
+			<img src="404-tick.png">
+			<h2>Thank You!</h2>
+			<p>Thank you for your response! Your details has been successfully submitted.</p>
+			<button onclick="closePopup()" type="button">OK</button>
+		</div>
+	</div>
+	<div class="next-pre next-row">
+			<a href="secpg.html">Previous</a>
+		<a href="thirdpg.html">Next</a>
+	<script type="text/javascript">
+		let popup = document.getElementById("popup")
+		function openPopup(){
+			popup.classList.add("open-popup")
+		}
+		function closePopup(){
+			popup.classList.remove("open-popup")
+		}
+	</script>
+</body>
+</html>
